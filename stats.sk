@@ -9,6 +9,8 @@ command /stats <text>:
 			send "&c%player% has %{kills::%player's uuid%}% Kills!" to player
 		else if arg-1 is "deaths":
 			send "&c%player% has %{deaths::%player's uuid%}% Deaths!" to player
+		else:
+			send "&cPlease use a valid arguement"
 
 on tab complete of "/stats":
 	set tab completions for position 1 to "kills", and "deaths"
