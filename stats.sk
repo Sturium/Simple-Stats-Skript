@@ -6,9 +6,9 @@ command /stats <text>:
 	description: Find out your kill and deaths stats!
 	trigger:
 		if arg-1 is "kills":
-			send "&c%player% has %{kills::%player's uuid%}% Kills!" to player
+			send "&cYou have %{kills::%player's uuid%}% Kills!" to player
 		else if arg-1 is "deaths":
-			send "&c%player% has %{deaths::%player's uuid%}% Deaths!" to player
+			send "&cYou have %{deaths::%player's uuid%}% Deaths!" to player
 		else:
 			send "&cPlease use a valid arguement"
 
